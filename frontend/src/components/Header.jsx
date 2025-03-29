@@ -1,0 +1,22 @@
+const Header = () => {
+    return (
+      <header className="app-header">
+        <div className="header-content">
+          <div className="logo">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 11H11V3H3V11ZM5 5H9V9H5V5Z" fill="#0080ff"/>
+              <path d="M3 21H11V13H3V21ZM5 15H9V19H5V15Z" fill="#ff7b00"/>
+              <path d="M13 11H21V3H13V11ZM15 5H19V9H15V5Z" fill="#ff7b00"/>
+              <path d="M13 21H21V13H13V21ZM15 15H19V19H15V15Z" fill="#0080ff"/>
+            </svg>
+          </div>
+          <div className="brand">
+            <h1 className="brand-name">QR GenX</h1>
+            <span>by <a href="https://x.com/DelightGbolahan">Delight</a></span>
+          </div>
+        </div>
+      </header>
+    );
+  };
+  
+  export default Header;
