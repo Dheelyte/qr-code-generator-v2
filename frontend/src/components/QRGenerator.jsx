@@ -6,7 +6,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const QrGenerator = () => {
   const [url, setUrl] = useState('');
-  const [padding, setPadding] = useState(20);
+  const [padding, setPadding] = useState(2);
   const [fgColor, setFgColor] = useState('#000000');
   const [bgColor, setBgColor] = useState('#ffffff');
   const [logo, setLogo] = useState(null);
