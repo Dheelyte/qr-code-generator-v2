@@ -21,19 +21,11 @@
   display: flex;
   align-items: center;
 }
-.brand {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  color: #2c3e50;
-}
-.brand span {
-  color: #66788a;
-}
+
 .brand-name {
   margin: 0;
   color: #2c3e50;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: -0.5px;
 }
@@ -92,6 +84,34 @@ h1 {
   border-color: #3498db;
   outline: none;
   box-shadow: 0 0 0 3px rgba(52,152,219,0.2);
+}
+
+.design-section {
+  position: relative;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2rem 2rem 0;
+  margin: 2rem 0;
+}
+
+.design-section::before {
+  content: "Design";
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: white;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0 10px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .design-section {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
 }
 
 .size-slider {
@@ -284,7 +304,6 @@ h1 {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
-  margin-top: 1rem;
 }
 
 .generate-button:hover {
@@ -346,4 +365,32 @@ h1 {
   color: #2c3e50;
   font-weight: 500;
   font-size: 0.95rem;
+}
+.main-footer {
+  text-align: center;
+  color: #718096;
+  margin-bottom: 2rem;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-link {
+  color: #4299e1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #3182ce;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {  
+  .footer-text {
+    font-size: 0.8rem;
+  }
 }

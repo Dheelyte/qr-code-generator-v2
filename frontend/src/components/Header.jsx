@@ -10,10 +10,7 @@ const Header = () => {
               <path d="M13 21H21V13H13V21ZM15 15H19V19H15V15Z" fill="#0080ff"/>
             </svg>
           </div>
-          <div className="brand">
-            <h1 className="brand-name">QR Code Generator</h1>
-            <span>by <a href="https://x.com/DelightGbolahan">Delight</a></span>
-          </div>
+          <h1 className="brand-name">QR Code Generator</h1>
         </div>
       </header>
     );

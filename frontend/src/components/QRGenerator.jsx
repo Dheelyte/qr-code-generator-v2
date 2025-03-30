@@ -55,6 +55,7 @@ const QrGenerator = () => {
           />
         </div>
 
+        <div className="design-section">
         <div className="color-pickers">
           <div className="color-option" onClick={() => setShowColorPicker('fg')}>
             <div className="color-preview-container">
@@ -122,6 +123,7 @@ const QrGenerator = () => {
             </svg>
             <span>{logo ? 'Change Logo' : 'Upload Logo'}</span>
           </label>
+        </div>
         </div>
 
         <button 
