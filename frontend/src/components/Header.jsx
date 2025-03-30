@@ -11,7 +11,7 @@ const Header = () => {
             </svg>
           </div>
           <div className="brand">
-            <h1 className="brand-name">QR GenX</h1>
+            <h1 className="brand-name">QR Code Generator</h1>
             <span>by <a href="https://x.com/DelightGbolahan">Delight</a></span>
           </div>
         </div>

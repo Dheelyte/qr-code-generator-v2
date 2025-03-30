@@ -27,10 +27,13 @@
   gap: 10px;
   color: #2c3e50;
 }
+.brand span {
+  color: #66788a;
+}
 .brand-name {
   margin: 0;
   color: #2c3e50;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: -0.5px;
 }
@@ -94,7 +97,6 @@ h1 {
 .size-slider {
   width: 100%;
   margin: 10px 0;
-  -webkit-appearance: none;
   height: 8px;
   background: #e0e0e0;
   border-radius: 4px;
@@ -244,9 +246,9 @@ h1 {
 .logo-upload {
   background: #f8f9fa;
   color: #3498db;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 40px;
   box-sizing: border-box;
   padding: 12px 20px;
   border-radius: 8px;
@@ -266,6 +268,9 @@ h1 {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
+}
+.logo-upload span {
+  margin-left: 10px;
 }
 
 .generate-button {
@@ -293,24 +298,32 @@ h1 {
   transform: none;
 }
 .qr-preview-container {
+  position: relative;
   background: white;
   padding: 32px;
+  max-width: 464px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   flex: 1;
-  max-width: 400px;
+  box-sizing: border-box;  
 }
 .qr-preview {
   position: relative;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 512px;
-  background-clip: padding-box;
+  width: 100%;
+  box-sizing: border-box;  
+  aspect-ratio: 1 / 1;
   outline: 2px solid #e0e0e0;
+  /* Fallback for older browsers */
+  height: 0;
+  padding-top: 100%;
 }
-
+.qr-preview > svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
 .logo-overlay {
   position: absolute;
   top: 50%;
@@ -320,7 +333,9 @@ h1 {
   background: white;
   border-radius: 12px;
 }
-
+.logo-overlay img {
+  width: 50px;
+}
 .input-group {
   margin-bottom: 1.5rem;
 }
